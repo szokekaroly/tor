@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  tor:
+    image: szokekaroly/tor:arm
+    build:
+      context: .
+      dockerfile: Dockerfile.arm
+    ports:
+      - 9050:9050
+    volumes:
+      - tor:/var/lib/tor
+
+volumes:
+  tor:
