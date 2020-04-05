@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   tor:
-    image: szokekaroly/tor:arm
+    image: docker.io/szokekaroly/tor:arm
     build:
       context: .
       dockerfile: Dockerfile.arm
