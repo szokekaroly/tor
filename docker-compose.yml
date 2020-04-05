@@ -2,6 +2,7 @@ version: '3.4'
 
 services:
   tor:
+    image: szokekaroly/tor
     build:
       context: .
     ports:
